@@ -1,4 +1,4 @@
-package com.millertron.otm.employeeservice;
+package com.millertronics.otm.employeeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

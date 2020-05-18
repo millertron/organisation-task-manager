@@ -8,7 +8,7 @@
         <version>2.3.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.millertron.otm</groupId>
+    <groupId>com.millertronics.otm</groupId>
     <artifactId>employee-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>employee-service</name>

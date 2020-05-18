@@ -1,4 +1,4 @@
-package com.millertron.otm.employeeservice;
+package com.millertronics.otm.employeeservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
