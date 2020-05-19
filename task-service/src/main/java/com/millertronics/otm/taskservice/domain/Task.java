@@ -1,4 +1,4 @@
-package com.millertronics.otm.taskservice.models;
+package com.millertronics.otm.taskservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
