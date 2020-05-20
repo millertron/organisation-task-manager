@@ -11,5 +11,5 @@ import java.util.List;
 public interface TaskClient {
 
     @GetMapping("/")
-    List<Task> getTasksForEmployee(@RequestParam long employeeId);
+    List<Task> getTasksForEmployee(@RequestParam("employee_id") long employeeId);
 }

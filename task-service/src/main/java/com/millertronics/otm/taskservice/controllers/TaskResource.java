@@ -18,7 +18,7 @@ public class TaskResource {
     private final TaskRepository taskRepository;
 
     @GetMapping
-    public List<Task> listAll(@RequestParam(required = false) Long employeeId) {
+    public List<Task> listAll(@RequestParam(required = false, name = "employee_id") Long employeeId) {
         if (employeeId != null) {
             return taskRepository.findByEmployeeId(employeeId);
         }
