@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "task-service")
+@FeignClient(name = "task-service", fallback = TaskClientFallback.class)
 public interface TaskClient {
 
     @GetMapping("/")
