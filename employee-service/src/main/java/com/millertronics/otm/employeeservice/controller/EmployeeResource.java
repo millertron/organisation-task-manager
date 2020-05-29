@@ -1,4 +1,4 @@
-package com.millertronics.otm.employeeservice.controller.v1;
+package com.millertronics.otm.employeeservice.controller;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/employee")
 @AllArgsConstructor
-public class EmployeeResourceV1 {
+public class EmployeeResource {
     
     private final EmployeeRepository employeeRepository;
     private final TaskClient taskClient;
