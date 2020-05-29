@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: employee-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/otm-employee-dev?serverTimezone=UTC
+    username: otm_user
+    password: s3cr3t!=
+
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+
+feign:
+  hystrix:
+    enabled: true
