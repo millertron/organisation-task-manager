@@ -8,8 +8,11 @@ import com.millertronics.otm.employeeservice.domain.Employee;
 import com.millertronics.otm.employeeservice.domain.EmployeeRepository;
 
 import com.millertronics.otm.employeeservice.domain.Task;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,5 +41,11 @@ public class EmployeeResource {
         return taskClient.getTasksForEmployee(employeeRepository.findById(id)
                 .map(Employee::getId)
                 .orElseThrow(NoSuchElementException::new));
+    }
+
+    @PostMapping("/")
+    @PreAuthorize("hasAnyAuthority('create_employee')")
+    public Employee save(@RequestBody Employee employee) {
+        return employeeRepository.save(employee);
     }
 }
