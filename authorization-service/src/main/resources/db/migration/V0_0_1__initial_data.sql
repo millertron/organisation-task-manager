@@ -113,7 +113,11 @@ values ('profx',
        ('magneto',
         '$2a$10$k2fASsrKcxj1/9AKHqfGouO.I68fAa2ic1wGccQVn92CdK9cX2zFa',
         'magneto@brotherhood',
+        1, 1, 1, 1),
+       ('beast',
+        '$2a$10$ZM2YX4zHTXgm2JX87ETRmeAv.wLIQdWvxDfL6miCEug6fn53CdMIy',
+        'best@xmen.com',
         1, 1, 1, 1);
 
 insert into role_user (user_id, role_id)
-values (1, 1), (1, 1);
+values (1, 1), (2, 1), (3, 2);
