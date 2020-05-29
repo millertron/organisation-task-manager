@@ -108,11 +108,11 @@ insert into user (username,
                   account_non_locked)
 values ('profx',
         '$2a$10$ZM2YX4zHTXgm2JX87ETRmeAv.wLIQdWvxDfL6miCEug6fn53CdMIy',
-        'miller@millertronics.com',
+        'profx@xmen.com',
         1, 1, 1, 1),
        ('magneto',
         '$2a$10$k2fASsrKcxj1/9AKHqfGouO.I68fAa2ic1wGccQVn92CdK9cX2zFa',
-        'hawkwood@millertronics',
+        'magneto@brotherhood',
         1, 1, 1, 1);
 
 insert into role_user (user_id, role_id)
