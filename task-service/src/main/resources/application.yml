@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+
+spring:
+  application:
+    name: task-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/otm-task-dev?serverTimezone=UTC
+    username: otm_user
+    password: s3cr3t!=
