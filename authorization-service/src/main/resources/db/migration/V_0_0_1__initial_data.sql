@@ -80,7 +80,7 @@ insert into oauth_client_details (
     authorized_grant_types,
     additional_information)
 values ('mobile',
-        '{bcrypt}$2a$10$w1AHikucQz1gWuvhOSvGyevzoIl1QmBUvYpxdva8Aeaf0am2U0s2u',
+        '$2a$10$w1AHikucQz1gWuvhOSvGyevzoIl1QmBUvYpxdva8Aeaf0am2U0s2u',
         'http://localhost:8080/code',
         'READ,WRITE',
         '3600',
@@ -107,11 +107,11 @@ insert into user (username,
                   credentials_non_expired,
                   account_non_locked)
 values ('profx',
-        '{bcrypt}$2a$10$ZM2YX4zHTXgm2JX87ETRmeAv.wLIQdWvxDfL6miCEug6fn53CdMIy',
+        '$2a$10$ZM2YX4zHTXgm2JX87ETRmeAv.wLIQdWvxDfL6miCEug6fn53CdMIy',
         'miller@millertronics.com',
         1, 1, 1, 1),
        ('magneto',
-        '{bcrypt}$2a$10$k2fASsrKcxj1/9AKHqfGouO.I68fAa2ic1wGccQVn92CdK9cX2zFa',
+        '$2a$10$k2fASsrKcxj1/9AKHqfGouO.I68fAa2ic1wGccQVn92CdK9cX2zFa',
         'hawkwood@millertronics',
         1, 1, 1, 1);
 
