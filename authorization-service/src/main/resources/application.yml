@@ -2,8 +2,13 @@ server:
   port: 8088
 spring:
   application:
-    name: authorization-service
+    name: auth-service
   datasource:
     url: jdbc:mysql://localhost:3306/otm-employee-dev?serverTimezone=UTC
     username: otm_user
     password: s3cr3t!=
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
