@@ -1,0 +1,19 @@
+spring:
+  thymeleaf:
+    cache: false
+
+security:
+  oauth2:
+    client:
+      client-id: mobile
+      client-secret: pin
+      user-authorization-uri: http://localhost:8088/oauth/authorize
+      access-token-uri: http://localhost:8088/oauth/token
+    resource:
+      token-info-uri: http://localhost:8088/oauth/check_token
+
+server:
+  servlet:
+    session:
+      cookie:
+        name: OTMWEBCLIENTSESSION
