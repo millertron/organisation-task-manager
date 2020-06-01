@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <div th:replace="header :: header"></div>
+    </head>
+    <body>
+        <h1 th:text="${'Welcome ' + username + ' HOME'}">Welcome to OTM</h1>
+        <table>
+            <th>
+                Task
+            </th>
+            <th>
+                Description
+            </th>
+            <tr th:if="${data != null}" th:each="item : ${data}">
+                <td th:text="${item.key}">text</td>
+                <td th:text="${item.value}">description</td>
+            </tr>
+            <tr th:if="${data == null || data.empty}">
+                <td colspan="2">
+                    Data is unavailable or empty!
+                </td>
+            </tr>
+        </table>
+        <div th:insert="footer :: footer"></div>
+    </body>
+</html>

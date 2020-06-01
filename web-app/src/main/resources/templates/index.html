@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <div th:replace="header :: header"></div>
+    </head>
+    <body>
+        <h1>Welcome to OTM</h1>
+        <div class="alert alert-danger">
+            Please login to use the application.
+        </div>
+        <div th:insert="footer :: footer"></div>
+    </body>
+</html>
