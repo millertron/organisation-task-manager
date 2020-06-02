@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("/employee")
+@RequestMapping("/employees")
 @AllArgsConstructor
 public class EmployeeResource {
     
